@@ -48,11 +48,8 @@ nav {
     margin-right: 50px;
 }
 
-.menu li {
-    padding-left: 30px;
-}
-
 .menu li a {
+    padding-left: 30px;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -252,11 +249,7 @@ nav {
         z-index: 100;
         background-color: rgb(51, 51, 51);
         transition: all 0.2s ease-in-out;
-    }
-
-    .menu li {
-        margin-top: 40px;
-    }
+    }   
 
     .menu li a{
         padding: 10px;
@@ -304,9 +297,10 @@ nav {
         color: green;
         display: inline-flex;
         border-right: 3px solid green;
-        width: 31%;
+        width: 37%;
         overflow: hidden;
-        animation:  none;
+        animation:  cursor 0.7s infinite alternate,
+                    typing 2s steps(20);
     }
 
     .homecontent h3{
@@ -340,26 +334,6 @@ nav {
     .btn1{
         font-size: 1.5rem;
     }
-} 
-
-@media (min-width:405px) and (max-width:430px) {
-    .homecontent h1{
-        font-size: 3rem;
-    }
-
-    .homecontent h1 span{
-        color: green;
-        display: inline-flex;
-        border-right: 3px solid green;
-        width: 37%;
-        overflow: hidden;
-        animation:  cursor 0.7s infinite alternate,
-                    typing 2s steps(20);
-    }
-
-    .homecontent h3{
-        font-size: 2rem;
-    }
 
     .homecontent h3 span{
         color: green;
@@ -372,10 +346,37 @@ nav {
         animation:  cursor 0.7s infinite alternate,
                     typing 2s steps(13);
     }
-}
-
+} 
 
 @media (min-width:360px) and (max-width:404px) {
+
+    .menu{
+        border: 3px solid green;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(51, 51, 51);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-left: 0;
+    }
+
+    .open-menu {
+        top: 8px;
+        right: 20px;
+    }
+
+    .logo a{
+        font-size: 30px;
+    }
 
     .home{
         flex-direction: column;
@@ -417,4 +418,53 @@ nav {
                     typing 2s steps(13);
     }
 
+    }
+
+    @media (min-width:320px) and (max-width:359px) {
+        
+        .logo a{
+            font-size: 1.5rem;
+            color: green;
+            font-weight: 800;
+            transition: 0.5s ease-in-out;
+            text-decoration: none;
+        }
+        
+         .logo a:hover {
+            font-size: 2rem;
+        } 
+        .home{
+            flex-direction: column;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background-color: black;
+        }
+
+        .homecontent h1{
+            font-size: 30px;
+        }
+
+        .homecontent h3{
+            font-size: 30px;
+        }
+
+        .homecontent h3 span{
+            color: green;
+            display: inline-flex;
+            padding-bottom: 0;
+            border-right: 3px solid green;
+            width: 75%;
+            white-space:nowrap;
+            overflow: hidden;
+            animation:  cursor 0.7s infinite alternate,
+                        typing 2s steps(13);
+        }
+
+        .open-menu {
+            top: 3px;
+            right: 20px;
+        }
     }

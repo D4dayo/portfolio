@@ -49,7 +49,9 @@ h1 span{
 }
 
 @media (min-width:360px) and (max-width:480px){
-    
+  .tulip h1{
+    font-size: 20px;
+  }  
 .greenlatern{
     width: 670px;
     height: 40px;
@@ -68,7 +70,6 @@ h1 span{
 
 .shazam{
     background-color:white;
-    /* display: none; */
     color: black;
     margin-left: 0;   
 }
@@ -88,4 +89,6 @@ h1 span{
     background-color: green;
     height: 3px;
 }
+
+
 }

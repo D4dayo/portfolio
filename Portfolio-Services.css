@@ -90,6 +90,9 @@ h1 span{
 }
 
 @media (min-width:360px) and (max-width:480px) {
+    .tulip h1{
+        font-size: 28px;
+    }
     
 .avengers{
     border: 3px solid green;
@@ -154,6 +157,10 @@ h1 span{
     padding-left: 10px;
     padding-bottom: 70px;
     /* position: fixed; */
+}
+
+p span{
+    display: none;
 }
 }
 
